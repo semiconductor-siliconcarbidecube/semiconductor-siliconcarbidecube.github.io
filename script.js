@@ -193,7 +193,7 @@ const root = document.documentElement;
 const GCopacity = (value) => {
     if (gc) {
         gc.style.opacity = value;
-        a_menu_sm.style.opacity = value;
+        // a_menu_sm.style.opacity = value;
     }
 
     if (value === 0) {

@@ -394,22 +394,22 @@ body {
 }
 
 .A_MENU_DES_ITEM1 {
-    background: var(--p);
+    background: var(--red);
 }
 
 .A_MENU_DES_ITEM2 {
-    background: var(--s);
+    background: var(--red);
 }
 
 .A_MENU_DES_ITEM3 {
-    background: var(--t);
+    background: var(--red);
 }
 
 .A_MENU_DES {
     width: 300vw;
     height: 27vh;
     position: fixed;
-    bottom: 10vh;
+    bottom: 13vh;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -438,8 +438,10 @@ body {
 .A_MENU_SM {
     display: flex;
     position: absolute;
-    bottom: 4vh;
-    opacity: 0.3;
+    bottom: 3.5vh;
+    color: white;
+    justify-content: center;
+    font-size: 1vw;
 }
 
 .A_MENU_SM_ITEM {
@@ -1033,4 +1035,6 @@ body {
     width: 100%;
     right: -72.75vw;
     bottom: 7vh;
-}
+}.A_MENU_SM_N {font-family: 'Doto';opacity: 0.3;}
+
+.A_MENU_SM_S {padding: 0 0.4vw;font-family: 'Major';color: var(--red);}
