@@ -339,9 +339,14 @@ const flashAndFade = () => {
 processLoadingText();
 
 // Run flashing after DOM content is loaded
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
+//     flashAndFade();
+// });
+
+window.addEventListener('load', () => {
     flashAndFade();
 });
+
 
 // Primary color changer
 const updateColor = (nov) => {
