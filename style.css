@@ -770,7 +770,7 @@ body {
 
 .I_C_R_D_D {
     width: 100%;
-    height: 300%;
+    height: 259.2vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1053,6 +1053,7 @@ body {
 .C_MAIN_CONTAINER_2_TEXT {
     font-family: 'Major';
     text-align: justify;
+    font-size: 2.1vh;
 }
 
 .C_ITEM_TEXT_SPAN_IDEN {
@@ -1150,7 +1151,7 @@ body {
 }
 
 .ARMAC3_IMG {
-    height: 52%;
+    height: 24vh;
     filter: invert(1);
 }
 
@@ -1200,7 +1201,7 @@ body {
 
 .I_C_MC_C_SER_SPEC {width: 55%;height: 50%;display: flex;flex-direction: column;}
 
-.I_C_MC_C_SER_SPEC_ITEM {display: flex;justify-content: space-between;margin: 1vh 0;}
+.I_C_MC_C_SER_SPEC_ITEM {display: flex;justify-content: space-between;margin: 1vh 0;font-size: 2.1vh;}
 
 .I_C_MC_C_SER_SPEC_ITEM_TXT1 {background: var(--black);color: white;padding: 6px 4px 2px 5px;letter-spacing: 2px;width: 22%;text-align: center;}
 
