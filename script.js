@@ -521,13 +521,14 @@ async function copyToClipboard(text) {
     }
 }
 
+// ARMA 3 mouse hover
 const updateBackgroundPosition = (event) => {
     const maxX = -22;
-    const minX = 0;   
+    const minX = 0;
     const maxY = -14;
-    const minY = -2;   
+    const minY = -2;
 
-    const sensitivity = 0.5; 
+    const sensitivity = 0.5;
 
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
@@ -542,3 +543,4 @@ const updateBackgroundPosition = (event) => {
 };
 
 document.addEventListener("mousemove", updateBackgroundPosition);
+
