@@ -1215,6 +1215,7 @@ body {
     position: relative;
     letter-spacing: 1px;
     font-family: 'Major';
+    cursor: pointer;
 }
 
 .I_C_MC_C_SER_SPEC_ITEM_TXT2_IP::before {
