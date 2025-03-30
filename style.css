@@ -447,7 +447,7 @@ body {
 .A_MENU_SM {
     display: flex;
     position: absolute;
-    bottom: 3.5vh;
+    bottom: 3.8vh;
     color: white;
     justify-content: center;
     font-size: 1vw;
@@ -1225,4 +1225,15 @@ body {
     font-size: 1.4vh;
     animation: copyBlink 0.2s ease-in-out 0s infinite alternate;
     font-family: 'Minecraft';
+}.A_MENU_SM_N_S {padding: 0 0.4vw 0 0;}
+
+.CL_TXT2_CR {
 }
+
+.CL_TXT2_CR_ARMA3 {font-family: 'Purista';}
+
+.CL_TXT2_CR_MINECRAFT {font-family: 'Minecraft';}
+.A_MENU_SM_N_DATE {padding: 0 0.35vw 0 0;}
+.CL_TXT2_PUR {font-family: 'Purista';}
+
+.CL_TXT2_MC {font-family: 'Minecraft';}
