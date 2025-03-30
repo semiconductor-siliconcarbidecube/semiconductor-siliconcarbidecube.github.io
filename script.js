@@ -89,7 +89,7 @@ const animateText = () => {
 
         const updatedText = letters.map((letter, i) => {
             if (i === uppercaseIndex) {
-                return letter.toLowerCase(); 
+                return letter.toLowerCase();
             }
             return letter;
         }).join('');
@@ -476,8 +476,8 @@ const interestElements = {
     ],
 
     right: [
-        I_C_R_D1, 
-        I_C_R_D2, 
+        I_C_R_D1,
+        I_C_R_D2,
         I_C_R_D3
     ],
 
@@ -520,3 +520,29 @@ async function copyToClipboard(text) {
         console.error('Failed to copy: ', err);
     }
 }
+
+const updateBackgroundPosition = (event) => {
+    const maxX = -22; // Maximum x in vw
+    const minX = 0;   // Minimum x in vw
+    const maxY = -14; // Maximum y in vh
+    const minY = -2;   // Minimum y in vh
+
+    const sensitivity = 0.5; // Adjust sensitivity (0.1 = less movement, 2.0 = more movement)
+
+    // Get viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Calculate movement with sensitivity scaling
+    const offsetX = sensitivity * ((event.clientX / viewportWidth) * (minX - maxX) + maxX);
+    const offsetY = sensitivity * ((event.clientY / viewportHeight) * (minY - maxY) + maxY);
+
+    // Apply the calculated background position to the specified element
+    const element = document.querySelector(".I_C_R_D2");
+    if (element) {
+        element.style.backgroundPosition = `${offsetX}vw ${offsetY}vh`;
+    }
+};
+
+// Add event listener with the arrow function
+document.addEventListener("mousemove", updateBackgroundPosition);

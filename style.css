@@ -23,13 +23,11 @@
     --red_t: #000000;
     --black: #0b0a0a;
     --gray: #656565;
-
     --p: #34d6fe;
     --s: #fa524c;
     --t: #fdcd3e;
-
     --coding: #39a0bc;
-    --arma3: #e6702c;
+    --arma3: #232826;
     --minecraft: #33a31c;
 }
 
@@ -209,6 +207,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .E {
@@ -616,6 +615,16 @@ body {
     clip-path: polygon(3% 0, 100% 0, 100% 95%, 97% 100%, 0 100%, 0 5%);
 }
 
+.DC_C_BG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--red);
+    opacity: 0.1;
+}
+
 .Dl {
     width: 100%;
     height: 100%;
@@ -730,12 +739,17 @@ body {
 }
 
 .I_C_R_D1 {
-    background: var(--coding);
+    background-color: var(--black);
+    background-image: radial-gradient(var(--coding) 1px, transparent 1px);
+    background-size: 3vh 3vh;
 }
 
 .I_C_R_D2 {
-    background: var(--arma3);
+    background: url(https://wallpaperaccess.com/download/arma3-9297895);
     opacity: 0;
+    background-size: cover;
+    background-position: -12vw -7vh;
+    transition: ease 0.3s;
 }
 
 .I_C_R_D3 {
@@ -1035,6 +1049,104 @@ body {
     width: 100%;
     right: -72.75vw;
     bottom: 7vh;
-}.A_MENU_SM_N {font-family: 'Doto';opacity: 0.3;}
+}
 
-.A_MENU_SM_S {padding: 0 0.4vw;font-family: 'Major';color: var(--red);}
+.A_MENU_SM_N {
+    font-family: 'Doto';
+    opacity: 0.3;
+}
+
+.A_MENU_SM_S {
+    padding: 0 0.4vw;
+    font-family: 'Major';
+    color: var(--red);
+}
+
+.CODING_C {
+    width: 100%;
+    height: 100%;
+}
+
+.CODING_C1 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CODING_C1_TXT {
+    color: var(--coding);
+    font-family: 'Doto';
+    font-size: 11vh;
+    letter-spacing: 6px;
+}
+
+.CODING_C2 {
+    width: 100%;
+    height: 30%;
+    background: var(--coding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CODING_C2_TXT {
+    font-family: 'Doto';
+    text-transform: uppercase;
+    font-size: 3vh;
+    width: 90%;
+    text-align: justify;
+    font-weight: bold;
+    letter-spacing: 0.3vh;
+}
+
+.UNI_BACK_INTEREST {
+    top: 11vh;
+    bottom: unset;
+}
+
+.ARMAC3_C {
+    width: 100%;
+    height: 100%;
+}
+
+.ARMAC3_C1 {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ARMAC3_IMG {
+    height: 52%;
+    filter: invert(1);
+}
+
+.ARMAC3_C2 {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    color: white;
+    font-size: 2vh;
+    font-weight: 200;
+    padding: 0 0 0 4vw;
+    background: var(--arma3);
+}
+
+.ARMAC3_C2_TXT {
+    text-shadow: 0px 0px 3px var(--arma3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.I_C_R::before, .I_C_R::after {
+
+}
+
+.I_C_R::before {}
+
+.I_C_R::after {}
