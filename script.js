@@ -522,27 +522,23 @@ async function copyToClipboard(text) {
 }
 
 const updateBackgroundPosition = (event) => {
-    const maxX = -22; // Maximum x in vw
-    const minX = 0;   // Minimum x in vw
-    const maxY = -14; // Maximum y in vh
-    const minY = -2;   // Minimum y in vh
+    const maxX = -22;
+    const minX = 0;   
+    const maxY = -14;
+    const minY = -2;   
 
-    const sensitivity = 0.5; // Adjust sensitivity (0.1 = less movement, 2.0 = more movement)
+    const sensitivity = 0.5; 
 
-    // Get viewport dimensions
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
-    // Calculate movement with sensitivity scaling
     const offsetX = sensitivity * ((event.clientX / viewportWidth) * (minX - maxX) + maxX);
     const offsetY = sensitivity * ((event.clientY / viewportHeight) * (minY - maxY) + maxY);
 
-    // Apply the calculated background position to the specified element
     const element = document.querySelector(".I_C_R_D2");
     if (element) {
         element.style.backgroundPosition = `${offsetX}vw ${offsetY}vh`;
     }
 };
 
-// Add event listener with the arrow function
 document.addEventListener("mousemove", updateBackgroundPosition);
